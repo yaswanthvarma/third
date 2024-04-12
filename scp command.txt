@@ -1,0 +1,27 @@
+scp source_file_name username@destination_host:destination_folder
+
+with “-p” parameter --  An estimated time and the connection speed will appear on the screen.
+use “-v” parameter to print debug information into the screen.
+
+The “-C” parameter will compress your files on the go. The unique thing is the compression is only happen in the network. When the file is arrived to the destination server, it will returning into the original size as before the compression happen.
+
+Copy files inside directory recursively
+
+scp -r documents username@destination_host:destination_folder
+scp ihsadm@HOST:/tmp/test/access_log /tmp/
+
+
+
+
+to copy file from source to destination server 
+
+scp -r documents username@destination_host:destination_folder
+scp /tmp/test/access_log ihsadm@HOST:/tmp/
+
+
+
+
+to copy file from destination to source server 
+
+scp  sername@destination_host:document source_folder 
+scp ihsadm@HOST:/tmp/test/access_log /tmp/
